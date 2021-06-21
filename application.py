@@ -1,10 +1,11 @@
-from flask import Flask, render_template
+#from flask import Flask, redirect
+import flask
 
-application = Flask(__name__)
+application = flask.Flask(__name__)
 
 @application.route('/')
-def home():
-    return render_template('home.html')
+def starting_url():
+    return flask.redirect('https://www.tree-plenish.org/host-an-event')
 
 if __name__ == '__main__':
     application.run()
