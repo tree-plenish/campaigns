@@ -4,7 +4,7 @@ import logging
 
 application = flask.Flask(__name__)
 #logging.basicConfig(filename="/var/log/web.stdout.log")
-logging.basicConfig(filename="campaigns.log")
+logging.basicConfig(filename="/var/log/campaigns.log")
 
 @application.route('/')
 def starting_url():
