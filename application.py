@@ -1,12 +1,15 @@
 #from flask import Flask, redirect
 import flask
+import logging
 
 application = flask.Flask(__name__)
+logging.basicConfig(filename="/var/log/web.stdout.log")
 
 @application.route('/')
 def starting_url():
+
     campaign = flask.request.args.get("c")
-    print(campaign)
+    # print(campaign)
     application.logger.info('Campaign Number: %s', campaign)
     return flask.redirect('https://www.tree-plenish.org/host-an-event')
 
