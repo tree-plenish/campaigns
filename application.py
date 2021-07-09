@@ -14,7 +14,7 @@ def starting_url():
     # print(campaign)
     #application.logger.info('Campaign Number: %s', campaign)
     #return render_template('home.html')
-    return flask.redirect('https://www.tree-plenish.org/host-an-event')
+    return flask.redirect('https://treeplenish.typeform.com/to/XoUpMy6k')
 
 if __name__ == '__main__':
     application.run()
